@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'MyFont';   /*字体名称*/
+    src: url('../font/fontname.ttf');       /*字体源文件*/
+  }
+
+  html{Font-family:"MyFont"!important;}
+
+
+/*代码块样式*/
+pre {
+  background: #eee !important;
+}
+
+code {
+  background: #eee !important;
+}
+
+
+/*搜索框样式*/
+input[type="search"] {
+  border: 1px solid #eee !important;
+  border-radius: 4rem !important;
+  background: url('https://hansu-1253325863.cos.ap-shanghai.myqcloud.com/docs/img/search.png') no-repeat;
+  background-position: 0.5rem center;
+  padding-left: 2rem !important;
+  transition: 0.5s linear;
+}
+
+input[type="search"]:focus {
+  border-color: #42b983 !important;
+}
+
+
+/*分页样式*/
+.pagination-item-label{float:left!important;}
+.pagination-item-title{font-size:1rem !important;float:left !important;margin:-0.2rem 0 0 0.5rem !important}
+
+

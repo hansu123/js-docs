@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>hansu的个人手册</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!--gittalk-->
+  <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
+
+  
+
+  <link rel="stylesheet" href="./src/css/main.css">
+
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+ 
+  <link rel="icon" href="https://hansu-1253325863.cos.ap-shanghai.myqcloud.com/newblog/web/icon-img/icon.png">
+
+
+</head>
+
+<body>
+
+
+  <div id="app"></div>
+
+
+  <script>
+    window.$docsify = {
+      name: '没有学不会的技术', //名称
+      repo: 'hansu',
+      // logo: 'https://hansu-1253325863.cos.ap-shanghai.myqcloud.com/newblog/web/icon-img/icon.png',  //网站左边logo
+      subMaxLevel: 1, //最多几级目录
+      loadNavbar: true,
+
+      //全文搜索
+      search: 'auto', // default
+      search: [
+        '/',            // => /README.md
+        '/guide',       // => /guide.md
+        '/get-started', // => /get-started.md
+        '/zh-cn/',      // => /zh-cn/README.md
+      ],
+
+      // complete configuration parameters
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+        paths: [], // or 'auto'
+        placeholder: 'search...',
+
+        // Localization
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': 'search...'
+        },
+
+        noData: 'No Results!',
+
+        // Localization
+        noData: {
+          '/zh-cn/': '找不到结果',
+          '/': 'No Results'
+        },
+
+        // Headline depth, 1 - 6
+        depth: 3,
+
+        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+
+        // To avoid search index collision
+        // between multiple websites under the same domain
+        namespace: 'website-1',
+      },
+      auto2top: true,
+
+      coverpage: true,//封面
+      alias: {
+        '/?id=main': '/README.md',
+      },//自定义路由规则
+
+      onlyCover: false,//千万别设置成true
+      loadSidebar: true,//修改侧边栏
+
+
+      //底部版权插件
+      plugins: [
+        function (hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span>&copy;2019</span>',
+            '<span>本手册由<a href="https://github.com/docsifyjs/docsify" target="_blank">dosify+github+Vue</a>提供支持.</span>',
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function (html) {
+            return html + footer;
+          });
+        }
+
+      ]
+
+
+
+    }
+  </script>
+
+
+  <!--copy_plugins-->
+  <script src="//unpkg.com/docsify-copy-code"></script>
+
+
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+
+
+  <!--search_plugins-->
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+
+  <!--pagination_plugins-->
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <!--core_js-->
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+
+
+
+
+
+  <!--gittalk插件--> 
+  <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '44fc359874ce5e3ec43c',//a93184883fa03da61af9
+      clientSecret: '54cf3f88b4fe6f3b136cec30c0d2ce12b278f16f',//'003d3a9535c559feb6b045cc941b969038bc0cb4',
+      repo: 'docs',
+      owner: 'hansu123',
+      admin: 'hansu123',
+      // facebook-like distraction free mode
+      id: decodeURI(window.location.pathname),
+      distractionFreeMode: true
+    })
+  </script>
+</body>
+
+</html>
