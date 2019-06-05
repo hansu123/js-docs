@@ -5,7 +5,7 @@
 
 - JS高级
 
-  - [this](JsCode/this.md)
+  - [This](JsCode/this.md)
   - [call和apply和bind](JsCode/call和apply和bind.md)
   - [arguments](JsCode/arguments.md)
   - [http协议](JsCode/http协议.md)
@@ -26,14 +26,7 @@
   - [fs模块](NodeJS/fs模块.md)
   - [ejs引擎模板](NodeJS/ejs引擎模板.md)
 
-- Vue基础
-  - [常用指令](Vue/basic_cmd.md)
-  - [props](Vue/props深度解析.md)
 
-- Linux基础
-  - [updating..](Linux/null.md)
- 
-- Git基础
-  - [updating..](Git/null.md)
+
 
 

@@ -60,6 +60,10 @@
 
 #### 7.`git merge 分支2` 合并分支2
 
+####8.`git branch -d 分支名` 删除本地分支名
+
+####9.`git push origin --delete 分支名` 删除远程分支名
+
 > 远程
 
 #### 1.`git clone 地址` 克隆项目到本地
