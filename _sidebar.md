@@ -3,6 +3,20 @@
   - [flex弹性布局](Css/flex弹性布局.md)
   - [css之选择器](Css/css之选择器.md)
 
+- JS基础
+
+  - [JS类型和转换](JsBase/1-JS类型和转换.md)
+  - [词法作用域](JsBase/3-词法作用域.md)
+  - [执行上下文](JsBase/4-执行上下文.md)
+  - [预编译](JsBase/5-预编译.md)
+  - [作用域和作用域链](JsBase/6-作用域和作用域链.md)
+  - [闭包](JsBase/7-闭包.md)
+  - [call和apply](JsBase/8-call和apply.md)
+  - [bind实现](JsBase/9-bind的实现.md)
+  - [new](JsBase/10-new.md)
+  - [arguments](JsBase/11-arguments.md)
+
+
 - JS高级
 
   - [This](JsCode/this.md)
@@ -18,8 +32,6 @@
   - [oop_继承](JsCode/oop_继承.md)
   - [跨域](JsCode/跨域.md)
  
-
-
 - Node.js进阶
 
   - [https模块](NodeJS/https模块.md)
